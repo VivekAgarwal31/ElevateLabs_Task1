@@ -14,7 +14,7 @@ The goal was to detect running services and assess potential security risks.
 
 ## ⚙️ Command Used
 ```bash
-sudo nmap -sS 192.168.2.0/24 -T4 -oN nmap_task.txt
+sudo nmap -sS 192.168.2.0/24 -oN nmap_task.txt
 ```
 
 ---
@@ -53,10 +53,11 @@ Mitigating these risks requires **restricting external access**, **patching serv
 ---
 
 ## 📁 Files & Deliverables
-- `nmap_task.txt` — raw Nmap scan output  
-- `open_ports.md` — extracted findings in Markdown  
-- `wireshark_screenshots/` — contains SYN/SYN-ACK evidence  
-- `scan_capture.pcapng` — packet capture of the scan  
+- `files/nmap_task.txt` — raw Nmap scan output
+- `files/wireshark_capture.pcapng` — packet capture of the scan
+- `screenshots/ip addr show` — checking the subnet and ip address of the used VM
+- `screenshots/nmap scan on subnet` — -sS nmap scan on the subnet found
+- `screenshots/wireshark capture during nmap scan` — wireshark packet capture during the nmap -sS scan       
 
 ---
 
